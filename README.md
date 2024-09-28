@@ -63,7 +63,7 @@ curl --location --request PATCH 'http://54.163.6.64/api/product/A123456789' \
     "model": "LP1236"
 }
 ```
-## Run Locally
+## Correr localmente
 
 Ejecutar el script SQL ubicado en carpeta BD en el manejador de bases de datos SQL local. Una vez hecho, asegurarse de crear un archivo .env con las variables correspondientes:
 
@@ -94,7 +94,7 @@ Instalar dependencias
   npm install
 ```
 
-Start the server
+Iniciar el servidor
 
 ```bash
   npm run start
