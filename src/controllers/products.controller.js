@@ -37,28 +37,3 @@ export const updateProduct = async(req, res) => {
         return res.status(500).json({message: 'Something went wrong', error})
     }
 };
-
-// export const createProduct = async(req, res) => {
-//     try{
-//         const {name, salary} = req.body;
-//         const [rows] = await pool.query('INSERT INTO product (name, salary) VALUES (?, ?)',[name, salary])
-//         res.send({
-//             id: rows.insertId,
-//             name, 
-//             salary
-//         });
-//     } catch (error) {
-//         return res.status(500).json({message: 'Something went wrong'})
-//     }
-// };
-
-// export const deleteProduct = async(req, res) => {
-//     try{
-//         const {id} = req.params;
-//         const [result] = await pool.query('DELETE FROM product WHERE id = ?',[id]);
-//         if(result.affectedRows === 0) return res.status(404).json({ message: 'Product not found'});
-//         res.sendStatus(204);
-//     } catch (error) {
-//         return res.status(500).json({message: 'Something went wrong'})
-//     }
-// };
